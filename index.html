@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Slack Loader</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .loading {
+        max-width: 50%;
+        line-height: 1.4;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .loading__author {
+        font-weigth: 400;
+        font-size: 1rem;
+        color: rgba(189, 189, 189, 1);
+        margin: 0.6rem 0 2rem 0;
+        display: block;
+      }
+
+      .loading__anim {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        border: 5px solid rgba(189, 189, 189, 0.25);
+        border-left-color: rgba(3, 155, 229, 1);
+        border-top-color: rgba(3, 155, 229, 1);
+        border-radius: 50%;
+        animation: rotate 1000ms infinite linear;
+      }
+
+      @keyframes rotate {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="loading">
+      For new sidebar colors, click your workspace name, then Preferences >
+      Sidebar > Theme
+      <span class="loading__author"> - Your friends at Slack</span>
+      <span class="loading__anim"></span>
+    </section>
+  </body>
+</html>
